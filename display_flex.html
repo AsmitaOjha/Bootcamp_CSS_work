@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display_flex</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        .parent{
+            height: 500px;
+            width:500px;
+            background: red;
+            display:flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: space-around;
+
+        }
+        .box{
+            height:100px;
+            width:100px;
+        }
+        .box1{
+        background-color: deeppink;
+    }
+    .box2{
+        background-color:darkorange;
+    }
+    .box3{
+        background-color: darkblue;
+    }
+    .box4{
+        background-color: darkgreen;
+    }
+    </style>
+</head>
+<body>
+    <h1>Flex property</h1>
+    <div class="parent">
+        <div class="box box1">Div 1</div>
+        <div class="box box2">Div 2</div>
+        <div class="box box3">Div 3</div>
+        <div class="box box4">Div 4</div>
+
+    </div>
+</body>
+</html>

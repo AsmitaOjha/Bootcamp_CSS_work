@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid art gallery assignment two</title>
+    <style>
+        .container{
+            height:100vh;
+            width:100vw;
+            border:9px solid green;
+            background-color:aqua;
+            display:grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-row-gap: 2px;
+            grid-column-gap:3px;
+        }
+        .images{
+            border: 2px solid blue;
+              width: 25%; 
+            
+            background-color: yellow;
+        
+        }
+        img{
+             width: 100%;
+            height: 100%; 
+        }
+        #big1{
+            grid-row-start:2;
+            grid-row-end:4;
+        }
+        #big2{
+        grid-row-start:1;
+        grid-row-end:3;
+        }
+        #big3{
+            grid-row-start:2;
+            grid-row-end:4;
+        }
+        #big4{
+            grid-row-start:1;
+            grid-row-end:3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="images" id="small1"><img src="/Images/building.jpg" alt="a"></div>
+        <div class="images" id="big1"><img src="/Images/leaf.jpg" alt="b"></div>
+        <div class="images" id="big2"><img src="/Images/green wooden floor.jpg" alt=""></div>
+        <div class="images" id="small2"><img src="/Images/camera.jpg" alt=""></div>
+        <div class="images" id="small3"><img src="/Images/blurr flowers.jpg" alt=""></div>
+        <div class="images" id="big3"><img src="/Images/birds.jpg" alt=""></div>
+        <div class="images"id="big4"><img src="/Images/wall art.jpg" alt=""></div>
+        <div class="images" id="small4"><img src="/Images/wooden art.jpg" alt=""></div>
+        
+    </div>
+</body>
+</html>

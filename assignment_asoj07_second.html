@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art gallery</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+        .photo_gallery{
+            border:10px solid blue;
+            background-color: deeppink;
+            height: 100vh;
+            width: 100vw;
+            display:flex;
+             flex-wrap:wrap; 
+            flex-direction:column;
+               justify-content: space-around 
+  
+
+        }
+        .pic{
+            border: 2px solid yellow;
+            width:23%;
+           
+        }
+        img{
+            object-fit:cover;
+            width:100%;
+            overflow: hidden;
+        }
+       #one, #four,#five,#eight{
+        height: 25%;
+
+       }
+       #two, #three,#six,#seven{
+        height:70%;
+       }
+    </style>
+</head>
+<body>
+    <div class="photo_gallery">
+        <div class="pic"id="one"><img src="/caps.jpg" alt="cap"></div> 
+        <div class="pic" id="two"><img src="/Images/esteban-amaro-Nw7PGwoprmY-unsplash.jpg" alt=""></div>
+        <div class="pic" id="three"><img src="/Images/aedrian-3xl38-PKMkM-unsplash.jpg" alt=""></div>
+        <div class="pic" id="fout"><img src="/Images/matt-bero-DA0e79aqFfI-unsplash.jpg" alt=""></div>
+        <div class="pic"id="five"><img src="/Images/bogomil-mihaylov-vSNimzYekN4-unsplash.jpg" alt=""></div>
+        <div class="pic" id="six"><img src="/Images/jon-moore-Er3x1zmQqJk-unsplash.jpg" alt=""></div>
+        <div class="pic" id="seven"><img src="/Images/burak-arslan-o57N3B1h9yQ-unsplash.jpg" alt=""></div>
+        <div class="pic" id="eight"><img src="/Images/aedrian-K3mKNRfTaM4-unsplash.jpg" alt=""></div>
+    </div>
+    
+</body>
+</html>
